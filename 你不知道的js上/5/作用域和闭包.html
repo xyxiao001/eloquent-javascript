@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>第五章， 作用域和闭包</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      'use strict';
+      (function () {
+        function foo () {
+          var a = 2
+
+          function bar () {
+            console.log(a)
+          }
+
+          bar()
+        }
+
+        foo()
+      })()
+    </script>
+  </body>
+</html>
